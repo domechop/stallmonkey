@@ -1,0 +1,208 @@
+/* Vibrant color scheme */
+:root {
+    --primary-color: #FF6B6B;  /* Coral red */
+    --secondary-color: #4ECDC4; /* Turquoise */
+    --accent-color: #FFE66D;   /* Sunny yellow */
+    --background-color: #f0f2f5;
+    --text-color: #2C3E50;
+    --card-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    --gradient: linear-gradient(135deg, #FF6B6B, #4ECDC4);
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.6;
+    padding-top: 20px;
+}
+
+/* Navigation styling */
+.navbar {
+    background: var(--gradient);
+    box-shadow: var(--card-shadow);
+    padding: 1rem 2rem;
+}
+
+.navbar-nav .nav-link {
+    color: white !important;
+    font-weight: 600;
+    margin: 0 15px;
+    transition: transform 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+    transform: translateY(-2px);
+    text-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+/* Logo/Image styling */
+.top-right-image {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    max-width: 150px;
+    border-radius: 15px;
+    box-shadow: var(--card-shadow);
+    transform: rotate(-5deg);
+    transition: transform 0.3s ease;
+}
+
+.top-right-image:hover {
+    transform: rotate(0deg) scale(1.05);
+}
+
+/* Main content styling */
+.fancy-title {
+    text-align: center;
+    background: var(--gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 3em;
+    margin: 40px 0;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+}
+
+.description {
+    text-align: center;
+    max-width: 800px;
+    margin: 30px auto;
+    font-size: 1.2em;
+    color: var(--text-color);
+    padding: 0 20px;
+    line-height: 1.8;
+}
+
+/* Form styling */
+form {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 30px;
+    background: white;
+    border-radius: 20px;
+    box-shadow: var(--card-shadow);
+    border: 3px solid var(--secondary-color);
+}
+
+form label {
+    font-weight: 600;
+    color: var(--primary-color);
+    margin-top: 15px;
+    font-size: 1.1em;
+}
+
+form input {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    border: 2px solid #e1e1e1;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    background-color: #f8f9fa;
+}
+
+form input:focus {
+    border-color: var(--secondary-color);
+    box-shadow: 0 0 0 3px rgba(78, 205, 196, 0.2);
+    outline: none;
+}
+
+form input[type="submit"] {
+    background: var(--gradient);
+    color: white;
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 1.1em;
+    transition: all 0.3s ease;
+}
+
+form input[type="submit"]:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+/* Permit cards styling */
+.permits-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 25px;
+    padding: 25px;
+}
+
+.permit-card {
+    background: white;
+    border-radius: 20px;
+    padding: 25px;
+    box-shadow: var(--card-shadow);
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+}
+
+.permit-card:hover {
+    transform: translateY(-5px) rotate(1deg);
+    border-color: var(--secondary-color);
+}
+
+.permit-card h2 {
+    color: var(--primary-color);
+    margin-bottom: 15px;
+    font-size: 1.8em;
+}
+
+.permit-card p {
+    margin: 12px 0;
+    color: var(--text-color);
+    font-size: 1.1em;
+}
+
+/* Button styling */
+.gigantic-button {
+    padding: 20px 40px;
+    font-size: 1.4em;
+    background: var(--gradient);
+    color: white;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: var(--card-shadow);
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.gigantic-button:hover {
+    transform: translateY(-3px) scale(1.02);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+.centered-container {
+    text-align: center;
+    margin: 40px 0;
+}
+
+/* Checkout page styling */
+.checkout-container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 35px;
+    background: white;
+    border-radius: 20px;
+    box-shadow: var(--card-shadow);
+    border: 3px solid var(--accent-color);
+}
+
+/* School info page styling */
+.school-info {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 35px;
+    background: white;
+    border-radius: 20px;
+    box-shadow: var(--card-shadow);
+    border: 3px solid var(--primary-color);
+} 

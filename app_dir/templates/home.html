@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <nav class="navbar navbar-expand-lg">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="permits">View Stalls</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="school_info">Find a Stall Monkey</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<head>
+    <meta charset="UTF-8">
+    <title>Stall Monkey</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <meta charset="UTF-8">
+    <title>Stall Monkey</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <img src="{{ url_for('static', filename='stallmonkey.jpg') }}" alt="Parking Image" class="top-right-image"/>
+    <h1 class="fancy-title">Stall Monkey</h1>
+    <p class="description">
+        Stall Monkey offers a convenient way to utilize unused parking permits. Instead of paying for a full semester, you can now pay by the hour, selecting times that align with your schedule. Our service specializes in connecting you with cost-effective parking options located near your class buildings, ensuring both affordability and convenience.
+    </p>
+
+    <form method="POST" action="/">
+        <label for="name">Owner's Name:</label><br>
+        <input type="text" id="name" name="name"><br>
+        <label for="lot">Parking Lot:</label><br>
+        <input type="text" id="lot" name="lot"><br>
+        <label for="price">Price:</label><br>
+        <input type="number" id="price" name="price" step="0.01"><br>
+        <label for="school">School:</label><br>
+        <input type="text" id="school" name="school"><br><br><br>
+        <input type="submit" value="Submit">
+    </form>
+
+    <div class="centered-container">
+        <a href="{{ url_for('permits') }}"><button class="gigantic-button">View Available Stalls!</button></a>
+    </div>
+    <br>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.5/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html> 

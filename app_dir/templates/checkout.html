@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Checkout</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Checkout</h1>
+    <div class="checkout-container">
+        <h2>Permit Details:</h2>
+        <p>Owner: {{ permit.name }}</p>
+        <p>Location: {{ permit.lot }}</p>
+        <p>Price: ${{ permit.price }}</p>
+        <p>School: {{ permit.school }}</p>
+        <!-- Add payment form or other checkout details here -->
+    </div>
+</body>
+</html> 
