@@ -27,7 +27,7 @@ try:
     connection.execute(
         """
         INSERT INTO permits (name, lot, price, school)
-        VALUES 
+        VALUES
             ('Test Owner', 'Lot A', 100.00, 'Test University'),
             ('Another Owner', 'Lot B', 150.00, 'Another University')
     """
