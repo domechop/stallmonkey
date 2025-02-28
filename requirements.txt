@@ -1,0 +1,7 @@
+flask==2.0.1
+werkzeug==2.0.3
+pytest==7.0.1
+pytest-flask==1.2.0
+black==22.3.0
+flake8==4.0.1
+mypy==0.950 

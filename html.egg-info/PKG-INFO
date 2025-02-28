@@ -1,0 +1,6 @@
+Metadata-Version: 2.2
+Name: html
+Version: 0.0.0
+Requires-Dist: flask==2.0.1
+Requires-Dist: werkzeug==2.0.3
+Dynamic: requires-dist
