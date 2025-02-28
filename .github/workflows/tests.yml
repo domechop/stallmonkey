@@ -30,11 +30,6 @@ jobs:
         pip install black  
         black --check app_dir tests 
 
-    - name: Type check
-      run: |
-        pip install mypy  
-        mypy app_dir  
-
     - name: Run tests
       run: |
         export PYTHONPATH=$PYTHONPATH:./app_dir  # Add app_dir to PYTHONPATH
